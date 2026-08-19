@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — QuickInvoice | Bearded Vet Studios</title>
+<meta name="description" content="Privacy policy for QuickInvoice, a Chrome extension by Bearded Vet Studios." />
+<link rel="icon" href="../assets/quickinvoice-icon.png" />
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <div class="site-id">
+        <span class="kicker">Bearded Vet Studios</span>
+        <span class="wordmark">Technology</span>
+      </div>
+      <nav>
+        <a href="https://beardedvetstudios.com/">Games</a>
+        <a href="/#tools">Tools</a>
+        <a href="/privacy/">Privacy</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="wrap page-content">
+    <h1>Privacy Policy — QuickInvoice</h1>
+    <p class="updated"><strong>Last updated:</strong> August 19, 2026</p>
+
+    <p>
+      QuickInvoice is a Chrome extension that generates invoices and
+      purchase orders from text you paste, a PDF you upload, or information
+      you type in manually.
+    </p>
+
+    <h2>Data collection</h2>
+    <p>
+      QuickInvoice itself does not collect, transmit, or share any of your
+      invoice, purchase order, business, or client data. It has no server of
+      its own and no analytics. The one exception, described in full below,
+      is the optional one-time Pro purchase, which is handled by a
+      third-party payment platform rather than by QuickInvoice.
+    </p>
+
+    <h2>Data storage</h2>
+    <p>
+      Everything you enter — your business information, saved
+      clients/vendors, invoice and PO numbering, invoice history, PO
+      history, appearance preferences, and draft data — is stored only in
+      your browser's local extension storage (<code>chrome.storage.local</code>),
+      using the <code>storage</code> and <code>unlimitedStorage</code>
+      permissions. This data:
+    </p>
+    <ul>
+      <li>Never leaves your device as part of normal use.</li>
+      <li>Is not sent to QuickInvoice's developer or any third party.</li>
+      <li>Is not synced to any cloud service.</li>
+      <li>Can be permanently deleted at any time by removing the extension, or by clearing its data from <code>chrome://extensions</code>.</li>
+    </ul>
+    <p>
+      One small exception: on the free plan, a monthly PDF-export counter
+      (just a number and a "YYYY-MM" period — no invoice, PO, or business
+      content) is stored using Chrome's built-in <code>storage.sync</code>
+      rather than <code>storage.local</code>, so it travels with your
+      Chrome/Google sign-in the same way your browser settings do. This is
+      solely to prevent the free monthly limit from being reset by
+      uninstalling and reinstalling the extension; it is not accessible to
+      QuickInvoice's developer and contains no identifying or business
+      information.
+    </p>
+
+    <h2>PDF and text processing</h2>
+    <p>
+      When you upload a PDF or paste text, it is read and parsed entirely
+      inside your browser using a locally bundled copy of pdf.js. The file
+      or text content is never uploaded anywhere.
+    </p>
+
+    <h2>QuickInvoice Pro (optional one-time purchase)</h2>
+    <p>
+      QuickInvoice Pro is an optional, one-time purchase that unlocks
+      unlimited PDF exports, a custom logo, non-USD currencies, invoice/PO
+      history, and CSV export. It is processed entirely by
+      <a href="https://extensionpay.com" target="_blank" rel="noopener">ExtensionPay</a>,
+      a third-party payment platform — QuickInvoice does not run its own
+      payment or account system. If you choose to upgrade:
+    </p>
+    <ul>
+      <li>
+        Clicking "Upgrade to Pro" opens a checkout page hosted at
+        <code>extensionpay.com</code>. Any payment details and the email
+        address you use to purchase are collected directly by ExtensionPay
+        (and its payment processor, Stripe), not by QuickInvoice. See
+        <a href="https://extensionpay.com/privacy.html" target="_blank" rel="noopener">ExtensionPay's privacy policy</a>
+        for how they handle that information.
+      </li>
+      <li>
+        After a purchase, QuickInvoice stores a purchase-activation key
+        locally and periodically confirms your purchase status by making a
+        request to <code>extensionpay.com</code>. This check happens
+        automatically only after a purchase has been started on that
+        browser — if you never open the Upgrade panel, QuickInvoice makes
+        no network requests at all.
+      </li>
+      <li>No invoice, purchase order, business, or client data is ever included in these requests or sent to ExtensionPay.</li>
+      <li>
+        "Log in on another device" also opens an ExtensionPay-hosted page,
+        where entering your purchase email restores Pro status via a magic
+        link sent by ExtensionPay.
+      </li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>storage / unlimitedStorage</strong> — used exclusively to save the local data described above.</li>
+      <li>
+        A content script that runs only on <code>https://extensionpay.com/*</code>
+        — used solely to relay a "purchase completed" signal back to the
+        extension after checkout on that page. It does not read or modify
+        anything else on that page, and does not run on any other website.
+      </li>
+    </ul>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the "Last updated" date above will change accordingly.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy can be directed to <a href="mailto:beardedvetstudios@gmail.com">beardedvetstudios@gmail.com</a>.</p>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; 2026 Bearded Vet Studios</span>
+      <div class="footer-links">
+        <a href="https://beardedvetstudios.com/">Main Site</a>
+        <a href="/">Technology</a>
+        <a href="mailto:beardedvetstudios@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
