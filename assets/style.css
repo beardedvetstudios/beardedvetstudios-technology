@@ -9,7 +9,7 @@
   --line: #e4e2dc;
   --bg: #f7f6f2;
   --panel: #ffffff;
-  --brand: #2f5fe0;      /* matches QuickInvoice's default accent color */
+  --brand: #2f5fe0;      /* matches InvoicePO's default accent color */
   --brand-dark: #1f45b0;
   --dark: #14161b;       /* header/footer — the "rugged" register */
   --dark-soft: #9aa0ad;
@@ -248,9 +248,29 @@ a { color: var(--brand); }
 .page-content h1 { font-size: 28px; margin-bottom: 4px; }
 .page-content .updated { color: var(--ink-soft); font-size: 13px; margin-bottom: 36px; }
 .page-content h2 { font-size: 18px; margin-top: 34px; }
+.page-content h3 { font-size: 15px; margin-top: 24px; margin-bottom: 6px; }
 .page-content p, .page-content li { font-size: 15px; color: #2a2f39; }
 .page-content ul { padding-left: 22px; }
 .page-content a { font-weight: 600; }
+
+/* Each covered product gets its own clearly-separated block, so this stays
+   a single shared policy (one URL, one doc to keep in sync) while every
+   product's specific data practices are still spelled out individually —
+   required for the policy to stay accurate per-listing, not just general. */
+.product-policy {
+  margin-top: 50px;
+  padding-top: 34px;
+  border-top: 2px solid var(--line);
+}
+.product-policy:first-of-type { margin-top: 34px; }
+.product-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+.product-heading img { width: 30px; height: 30px; border-radius: 7px; }
+.product-heading h2 { margin: 0; font-size: 21px; }
 
 /* ---- footer -------------------------------------------------------------- */
 footer {
